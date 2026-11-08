@@ -1,0 +1,2806 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شهر على أجمل بداية ❤️ | محمود &amp; شروق</title>
+
+  <!-- Google Fonts: Cairo (Headings & UI) + Tajawal (Romantic Letter & Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ==========================================================================
+       1. Luxury Romantic Color Palette & Design Tokens
+       ========================================================================== */
+    :root {
+      /* Core Palette: Warm Ivory, Blush Pink, Dusty Rose, Champagne Gold, Subtle Burgundy */
+      --ivory-bg: #fdf9f5;
+      --ivory-paper: #fffcf8;
+      --blush-soft: #fce8ef;
+      --blush-mid: #f7d1df;
+      --dusty-rose: #c45b78;
+      --dusty-rose-light: #e38da4;
+      --burgundy-deep: #591c2f;
+      --burgundy-soft: #782c44;
+      --champagne-gold: #cfa36e;
+      --champagne-light: #ebd2b0;
+      --champagne-glow: rgba(207, 163, 110, 0.32);
+
+      /* Text Hierarchy */
+      --text-primary: #451826;
+      --text-secondary: #754253;
+      --text-muted: #996978;
+
+      /* Premium Glassmorphism Tokens */
+      --glass-surface: rgba(255, 252, 249, 0.66);
+      --glass-surface-elevated: rgba(255, 253, 251, 0.84);
+      --glass-border-white: rgba(255, 255, 255, 0.88);
+      --glass-border-gold: rgba(207, 163, 110, 0.42);
+      --shadow-luxury: 0 24px 60px -12px rgba(89, 28, 47, 0.12),
+                       0 8px 24px -4px rgba(196, 91, 120, 0.08),
+                       inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+      --shadow-card-hover: 0 30px 70px -12px rgba(89, 28, 47, 0.18),
+                           0 12px 32px -4px rgba(207, 163, 110, 0.18),
+                           inset 0 1px 0 0 rgba(255, 255, 255, 1);
+
+      /* Radii & Transitions */
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ==========================================================================
+       2. Reset, Base & Arabic Typography
+       ========================================================================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
+      color: var(--text-primary);
+      background-color: var(--ivory-bg);
+      background-image:
+        radial-gradient(circle at 12% 10%, rgba(247, 209, 223, 0.65) 0%, transparent 42%),
+        radial-gradient(circle at 88% 22%, rgba(235, 210, 176, 0.48) 0%, transparent 46%),
+        radial-gradient(circle at 50% 58%, rgba(252, 232, 239, 0.7) 0%, transparent 55%),
+        radial-gradient(circle at 18% 88%, rgba(235, 210, 176, 0.4) 0%, transparent 45%),
+        linear-gradient(165deg, #fffcf9 0%, #fdf0f4 48%, #fbf2ea 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      line-height: 1.85;
+      overflow-x: hidden;
+      position: relative;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.envelope-locked {
+      overflow: hidden;
+    }
+
+    h1, h2, h3, .font-heading {
+      font-family: "Cairo", system-ui, -apple-system, sans-serif;
+    }
+
+    /* ==========================================================================
+       3. Ambient Light Orbs & Floating Rose Petals Canvas
+       ========================================================================== */
+    .ambient-lights {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .light-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(85px);
+      opacity: 0.55;
+      animation: breatheOrb 16s ease-in-out infinite alternate;
+    }
+
+    .light-orb-1 {
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, #f7bfd2 0%, transparent 70%);
+      top: -120px;
+      inset-inline-end: -100px;
+    }
+
+    .light-orb-2 {
+      width: 460px;
+      height: 460px;
+      background: radial-gradient(circle, #f3dcc1 0%, transparent 70%);
+      bottom: -140px;
+      inset-inline-start: -120px;
+      animation-delay: -6s;
+    }
+
+    .light-orb-3 {
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, #f5cad9 0%, transparent 70%);
+      top: 42%;
+      inset-inline-start: 50%;
+      transform: translate(-50%, -50%);
+      animation-delay: -11s;
+    }
+
+    @keyframes breatheOrb {
+      0% {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+      100% {
+        transform: translate3d(0, -32px, 0) scale(1.08);
+      }
+    }
+
+    #petalsCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ==========================================================================
+       4. Interactive Romantic Welcome Envelope Overlay
+       ========================================================================== */
+    .welcome-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background:
+        radial-gradient(circle at center, rgba(255, 248, 250, 0.94) 0%, rgba(249, 224, 233, 0.97) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: opacity 0.9s var(--ease-out-expo), visibility 0.9s var(--ease-out-expo);
+    }
+
+    .welcome-overlay.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .envelope-stage {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      animation: floatStage 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatStage {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-8px); }
+    }
+
+    .envelope-card {
+      position: relative;
+      background: linear-gradient(155deg, #fffdf9 0%, #faecee 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
+      box-shadow:
+        0 30px 70px -15px rgba(89, 28, 47, 0.22),
+        0 0 0 6px rgba(255, 255, 255, 0.6),
+        inset 0 0 35px rgba(207, 163, 110, 0.12);
+      overflow: hidden;
+      transition: transform 0.7s var(--ease-out-expo);
+    }
+
+    .envelope-card::before {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border: 1px solid rgba(207, 163, 110, 0.35);
+      border-radius: calc(var(--radius-xl) - 8px);
+      pointer-events: none;
+    }
+
+    .wax-seal-btn {
+      position: relative;
+      width: 84px;
+      height: 84px;
+      margin-inline: auto;
+      margin-block-end: 1.4rem;
+      border-radius: 50%;
+      border: 2px solid #e6c699;
+      background: radial-gradient(circle at 32% 30%, #b84260 0%, #7d2039 65%, #591427 100%);
+      color: #fbe6c5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      cursor: pointer;
+      box-shadow:
+        0 10px 25px rgba(89, 28, 47, 0.35),
+        0 0 0 6px rgba(207, 163, 110, 0.18),
+        inset 0 2px 6px rgba(255, 255, 255, 0.35);
+      transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s ease;
+    }
+
+    .wax-seal-btn:hover {
+      transform: scale(1.07) rotate(-4deg);
+      box-shadow:
+        0 14px 30px rgba(89, 28, 47, 0.42),
+        0 0 0 10px rgba(207, 163, 110, 0.25);
+    }
+
+    .envelope-subtitle {
+      display: inline-block;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--champagne-gold);
+      letter-spacing: 0.04em;
+      background: rgba(207, 163, 110, 0.12);
+      padding: 0.3rem 1rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(207, 163, 110, 0.3);
+      margin-block-end: 0.85rem;
+    }
+
+    .envelope-title {
+      font-size: clamp(1.5rem, 1.1rem + 2vw, 2rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      margin-block-end: 0.65rem;
+      text-wrap: balance;
+    }
+
+    .envelope-desc {
+      font-size: clamp(1rem, 0.9rem + 0.5vw, 1.12rem);
+      color: var(--text-secondary);
+      margin-block-end: 1.75rem;
+      line-height: 1.8;
+      text-wrap: pretty;
+    }
+
+    .open-gift-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      width: 100%;
+      max-width: 280px;
+      min-height: 52px;
+      padding: 0.85rem 1.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--burgundy-deep) 0%, var(--dusty-rose) 55%, var(--champagne-gold) 100%);
+      background-size: 160% 160%;
+      color: #ffffff;
+      font-family: "Cairo", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 12px 28px -6px rgba(120, 44, 68, 0.45);
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease;
+    }
+
+    .open-gift-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 34px -6px rgba(120, 44, 68, 0.55);
+    }
+
+    .open-gift-btn:active {
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       5. Main Page Wrapper & Reusable Luxury Glass Components
+       ========================================================================== */
+    .page-wrapper {
+      position: relative;
+      z-index: 2;
+      max-width: 1060px;
+      margin-inline: auto;
+      padding-inline: clamp(1.1rem, 4vw, 2.5rem);
+      padding-block: clamp(1.75rem, 4.5vw, 4rem);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(2.25rem, 5vw, 3.75rem);
+    }
+
+    .glass-card {
+      background: var(--glass-surface);
+      backdrop-filter: blur(22px) saturate(160%);
+      -webkit-backdrop-filter: blur(22px) saturate(160%);
+      border: 1.5px solid var(--glass-border-white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-luxury);
+      position: relative;
+      transition: transform 0.45s var(--ease-out-expo), box-shadow 0.45s var(--ease-out-expo);
+    }
+
+    /* Subtle inner gold frame line for luxury finish */
+    .luxury-border::after {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border-radius: calc(var(--radius-xl) - 8px);
+      border: 1px solid rgba(207, 163, 110, 0.25);
+      pointer-events: none;
+    }
+
+    /* Ornamental section divider */
+    .ornamental-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-block: -0.75rem;
+      opacity: 0.8;
+      user-select: none;
+    }
+
+    .ornamental-line {
+      height: 1px;
+      width: clamp(60px, 18vw, 150px);
+      background: linear-gradient(to inline-end, transparent, var(--champagne-gold), transparent);
+    }
+
+    .ornamental-gem {
+      color: var(--champagne-gold);
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Scroll Reveal Animations */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(28px);
+      transition:
+        opacity 0.9s var(--ease-out-expo),
+        transform 0.9s var(--ease-out-expo);
+    }
+
+    [data-reveal].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--champagne-gold);
+      background: rgba(207, 163, 110, 0.12);
+      border: 1px solid rgba(207, 163, 110, 0.32);
+      padding: 0.25rem 0.95rem;
+      border-radius: var(--radius-pill);
+      margin-block-end: 0.65rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-block-end: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    .section-title {
+      font-size: clamp(1.55rem, 1.1rem + 2.2vw, 2.25rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      margin-block-end: 0.45rem;
+      letter-spacing: -0.01em;
+      text-wrap: balance;
+    }
+
+    .section-subtitle {
+      font-size: clamp(0.96rem, 0.88rem + 0.4vw, 1.1rem);
+      color: var(--text-secondary);
+      text-wrap: pretty;
+    }
+
+    /* ==========================================================================
+       6. Section 1: Upgraded Cinematic Hero Section
+       ========================================================================== */
+    .hero {
+      text-align: center;
+      padding: clamp(3rem, 7vw, 5.25rem) clamp(1.35rem, 4.5vw, 3.5rem);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(252, 228, 236, 0.85) 0%, transparent 65%),
+        linear-gradient(165deg, rgba(255, 254, 252, 0.86) 0%, rgba(253, 236, 242, 0.68) 100%);
+    }
+
+    /* Animated glowing heart halo behind hero emblem */
+    .hero-emblem-wrapper {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      margin-inline: auto;
+      margin-block-end: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-pulse-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1.5px solid var(--champagne-gold);
+      opacity: 0.45;
+      animation: ringExpand 3.4s var(--ease-out-expo) infinite;
+    }
+
+    .hero-pulse-ring:nth-child(2) {
+      animation-delay: 1.7s;
+    }
+
+    @keyframes ringExpand {
+      0% {
+        transform: scale(0.85);
+        opacity: 0.65;
+      }
+      100% {
+        transform: scale(1.55);
+        opacity: 0;
+      }
+    }
+
+    .hero-icon {
+      position: relative;
+      z-index: 1;
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fffdf9 0%, #fce1ea 60%, #f3d7b8 100%);
+      border: 1.5px solid rgba(207, 163, 110, 0.55);
+      box-shadow:
+        0 12px 28px rgba(196, 91, 120, 0.22),
+        inset 0 2px 6px rgba(255, 255, 255, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.15rem;
+      animation: gentleHeartbeat 2.8s ease-in-out infinite;
+    }
+
+    @keyframes gentleHeartbeat {
+      0%, 100% { transform: scale(1); }
+      30% { transform: scale(1.08); }
+      60% { transform: scale(1.03); }
+    }
+
+    .hero-couple-names {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.05rem, 0.9rem + 0.7vw, 1.3rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(252, 232, 239, 0.85));
+      border: 1px solid var(--glass-border-gold);
+      padding: 0.35rem 1.35rem;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 8px 20px -6px rgba(207, 163, 110, 0.28);
+      margin-block-end: 1rem;
+    }
+
+    .hero-couple-heart {
+      color: var(--dusty-rose);
+      display: inline-block;
+      animation: gentleHeartbeat 2.4s ease-in-out infinite;
+    }
+
+    /* Subtle decorative SVG heart watermark behind the title */
+    .hero-title-container {
+      position: relative;
+      display: inline-block;
+      margin-block-end: 1.5rem;
+    }
+
+    .hero-bg-heart {
+      position: absolute;
+      top: 50%;
+      inset-inline-start: 50%;
+      transform: translate(50%, -50%);
+      width: clamp(180px, 35vw, 290px);
+      height: auto;
+      opacity: 0.08;
+      color: var(--dusty-rose);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-title {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(2.15rem, 1.35rem + 3.8vw, 3.75rem);
+      font-weight: 900;
+      line-height: 1.35;
+      background: linear-gradient(135deg, var(--burgundy-deep) 0%, #9e3352 50%, var(--burgundy-deep) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: var(--burgundy-deep);
+      text-shadow: 0 6px 24px rgba(196, 91, 120, 0.14);
+      text-wrap: balance;
+    }
+
+    .hero-subtitle-poem {
+      font-size: clamp(1rem, 0.92rem + 0.5vw, 1.2rem);
+      color: var(--text-secondary);
+      margin-block-end: 1.85rem;
+      font-weight: 500;
+      text-wrap: balance;
+    }
+
+    /* Premium Glass Date Badge with Champagne Gold Accents */
+    .date-badge-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-block-end: 2.1rem;
+    }
+
+    .date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(253, 245, 236, 0.88) 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      padding: 0.75rem 1.85rem;
+      border-radius: var(--radius-pill);
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(0.95rem, 0.82rem + 0.75vw, 1.18rem);
+      font-weight: 700;
+      color: var(--burgundy-deep);
+      box-shadow:
+        0 12px 30px -6px rgba(207, 163, 110, 0.28),
+        inset 0 1px 0 0 #ffffff;
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease;
+    }
+
+    .date-badge:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 16px 36px -6px rgba(207, 163, 110, 0.38),
+        inset 0 1px 0 0 #ffffff;
+    }
+
+    .date-badge-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--champagne-gold), var(--dusty-rose));
+      box-shadow: 0 0 0 4px rgba(207, 163, 110, 0.25);
+      flex-shrink: 0;
+    }
+
+    /* Scroll down cue */
+    .scroll-cue {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-family: "Cairo", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .scroll-cue:hover {
+      color: var(--burgundy-deep);
+    }
+
+    .scroll-cue-arrow {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid rgba(207, 163, 110, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--champagne-gold);
+      animation: bounceDown 2.2s ease-in-out infinite;
+    }
+
+    @keyframes bounceDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+    }
+
+    /* ==========================================================================
+       7. Section 2: Romantic Love Letter (Story / Quote Section)
+       ========================================================================== */
+    .quote-section {
+      padding: clamp(2.5rem, 6vw, 4.25rem) clamp(1.35rem, 5vw, 4rem);
+      background:
+        radial-gradient(circle at top right, rgba(235, 210, 176, 0.22), transparent 55%),
+        radial-gradient(circle at bottom left, rgba(247, 209, 223, 0.28), transparent 55%),
+        linear-gradient(180deg, #fffdf9 0%, #fcf5ee 100%);
+      border: 1.5px solid rgba(207, 163, 110, 0.42);
+      box-shadow:
+        0 26px 60px -15px rgba(89, 28, 47, 0.13),
+        inset 0 0 40px rgba(207, 163, 110, 0.08);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Subtle paper-like lined texture in background */
+    .quote-section::before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(207, 163, 110, 0.35);
+      border-radius: calc(var(--radius-xl) - 12px);
+      pointer-events: none;
+    }
+
+    /* Decorative Gold Corner Flourishes */
+    .letter-corner {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-color: var(--champagne-gold);
+      border-style: solid;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .corner-tr { top: 24px; right: 24px; border-width: 2px 2px 0 0; border-top-right-radius: 8px; }
+    .corner-tl { top: 24px; left: 24px; border-width: 2px 0 0 2px; border-top-left-radius: 8px; }
+    .corner-br { bottom: 24px; right: 24px; border-width: 0 2px 2px 0; border-bottom-right-radius: 8px; }
+    .corner-bl { bottom: 24px; left: 24px; border-width: 0 0 2px 2px; border-bottom-left-radius: 8px; }
+
+    .letter-seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #b84260, #6e1b33);
+      color: #fbe6c5;
+      border: 1.5px solid var(--champagne-light);
+      box-shadow: 0 6px 16px rgba(110, 27, 51, 0.25);
+      font-size: 1.25rem;
+      margin-block-end: 1rem;
+    }
+
+    .letter-header-label {
+      display: block;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--champagne-gold);
+      margin-block-end: 0.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .quote-mark {
+      font-size: clamp(2.8rem, 4vw, 3.8rem);
+      line-height: 1;
+      color: var(--champagne-gold);
+      opacity: 0.55;
+      font-family: Georgia, serif;
+      display: block;
+      margin-block-end: 0.35rem;
+      user-select: none;
+    }
+
+    .quote-text {
+      font-family: "Tajawal", "Cairo", sans-serif;
+      font-size: clamp(1.22rem, 1rem + 1.2vw, 1.62rem);
+      font-weight: 700;
+      color: var(--burgundy-deep);
+      line-height: 2.15;
+      max-width: 62ch;
+      margin-inline: auto;
+      position: relative;
+      z-index: 1;
+      text-wrap: pretty;
+    }
+
+    .quote-signature {
+      margin-block-start: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .quote-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      color: var(--champagne-gold);
+      font-size: 1.15rem;
+    }
+
+    .quote-divider::before,
+    .quote-divider::after {
+      content: "";
+      width: 65px;
+      height: 1.5px;
+      background: linear-gradient(to inline-end, transparent, var(--champagne-gold), transparent);
+    }
+
+    .signature-caption {
+      font-family: "Cairo", sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       8. Section 3: Exceptional Heirloom Photo Gallery & Fullscreen Lightbox
+       ========================================================================== */
+    .gallery-section {
+      padding: clamp(2.25rem, 5vw, 3.75rem) clamp(1.25rem, 4vw, 3rem);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+      gap: clamp(1.75rem, 4vw, 2.75rem);
+      align-items: stretch;
+    }
+
+    .photo-frame {
+      position: relative;
+      background: linear-gradient(165deg, #ffffff 0%, #fdf7f2 100%);
+      border: 1.5px solid rgba(207, 163, 110, 0.45);
+      border-radius: calc(var(--radius-lg) + 2px);
+      padding: clamp(0.9rem, 2.5vw, 1.3rem) clamp(0.9rem, 2.5vw, 1.3rem) 1.5rem;
+      box-shadow:
+        0 20px 45px -12px rgba(89, 28, 47, 0.16),
+        0 4px 14px -2px rgba(207, 163, 110, 0.14),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.95);
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      cursor: pointer;
+      transition:
+        transform 0.5s var(--ease-out-expo),
+        box-shadow 0.5s var(--ease-out-expo),
+        border-color 0.4s ease;
+    }
+
+    .photo-frame:hover {
+      transform: translateY(-8px);
+      border-color: var(--champagne-gold);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    /* Special centerpiece styling for the 2nd photograph (Engagement Rings) */
+    .photo-frame.is-centerpiece {
+      background: linear-gradient(165deg, #fffdf9 0%, #fbf0e6 100%);
+      border-color: rgba(207, 163, 110, 0.65);
+    }
+
+    .photo-badge-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--champagne-gold);
+      padding-inline: 0.25rem;
+    }
+
+    .photo-img-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border-radius: calc(var(--radius-md) - 2px);
+      overflow: hidden;
+      background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #f5e6d8 100%);
+      border: 1px solid rgba(207, 163, 110, 0.32);
+      box-shadow: inset 0 0 20px rgba(89, 28, 47, 0.08);
+    }
+
+    .photo-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.75s var(--ease-out-expo), filter 0.5s ease;
+    }
+
+    .photo-frame:hover .photo-img-container img {
+      transform: scale(1.045);
+    }
+
+    /* Subtle hover zoom prompt overlay */
+    .photo-zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      inset-inline-end: 12px;
+      background: rgba(89, 28, 47, 0.72);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #fffdf9;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(235, 210, 176, 0.45);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      opacity: 0.88;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .photo-frame:hover .photo-zoom-hint {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+
+    /* Fallback placeholder if image fails */
+    .photo-fallback {
+      position: absolute;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--burgundy-deep);
+      background: radial-gradient(circle at center, #fff7f9 0%, #f9d5e0 100%);
+    }
+
+    .photo-img-container.is-fallback .photo-fallback {
+      display: flex;
+    }
+
+    .photo-fallback-icon {
+      font-size: 3rem;
+      margin-block-end: 0.5rem;
+    }
+
+    .photo-caption-box {
+      text-align: center;
+      padding-inline: 0.5rem;
+    }
+
+    .photo-caption {
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.15rem, 0.95rem + 0.8vw, 1.35rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      margin-block-end: 0.2rem;
+      text-wrap: balance;
+    }
+
+    .photo-subcaption {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    /* Fullscreen Lightbox Modal (<dialog closedby="any">) */
+    .lightbox-dialog {
+      margin: auto;
+      max-width: min(92vw, 820px);
+      width: 100%;
+      max-height: 90vh;
+      border: 2px solid var(--champagne-gold);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(165deg, #fffdf9 0%, #f9ecee 100%);
+      padding: clamp(0.85rem, 2.5vw, 1.5rem);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+      overflow: hidden;
+    }
+
+    .lightbox-dialog::backdrop {
+      background: rgba(42, 12, 22, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .lightbox-dialog[open] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeDialog 0.35s var(--ease-out-expo);
+    }
+
+    @keyframes fadeDialog {
+      from {
+        opacity: 0;
+        transform: scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .lightbox-content {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 14px;
+      inset-inline-start: 14px;
+      z-index: 5;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--glass-border-gold);
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--burgundy-deep);
+      font-size: 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .lightbox-close:hover {
+      transform: scale(1.08);
+      background: #ffffff;
+    }
+
+    .lightbox-img-wrapper {
+      width: 100%;
+      max-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: calc(var(--radius-md) - 4px);
+      background: #1f0810;
+    }
+
+    .lightbox-img-wrapper img {
+      max-width: 100%;
+      max-height: 70vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-footer {
+      width: 100%;
+      margin-block-start: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-inline: 0.5rem;
+    }
+
+    .lightbox-caption {
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+    }
+
+    .lightbox-nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .lightbox-nav-btn {
+      min-width: 44px;
+      min-height: 44px;
+      padding-inline: 0.9rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--glass-border-gold);
+      background: #ffffff;
+      color: var(--burgundy-deep);
+      font-family: "Cairo", sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .lightbox-nav-btn:hover {
+      background: var(--blush-soft);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       9. Section 4: Upgraded Luxury Live Elapsed Time Counter
+       ========================================================================== */
+    .timer-section {
+      padding: clamp(2.25rem, 5.5vw, 3.75rem) clamp(1.25rem, 4.5vw, 3rem);
+      text-align: center;
+    }
+
+    .timer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(0.85rem, 2.5vw, 1.5rem);
+      margin-block-start: 0.5rem;
+    }
+
+    .timer-card {
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.9) 0%, rgba(253, 244, 235, 0.78) 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      border-radius: var(--radius-md);
+      padding: clamp(1.25rem, 3.2vw, 2rem) 0.75rem;
+      box-shadow:
+        0 14px 32px -8px rgba(89, 28, 47, 0.12),
+        inset 0 1px 0 0 #ffffff;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease;
+    }
+
+    .timer-card:hover {
+      transform: translateY(-5px);
+      box-shadow:
+        0 20px 38px -8px rgba(207, 163, 110, 0.28),
+        inset 0 1px 0 0 #ffffff;
+    }
+
+    /* Top Champagne Gold Shimmer Bar */
+    .timer-card::before {
+      content: "";
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--dusty-rose), var(--champagne-gold), var(--dusty-rose));
+    }
+
+    .timer-value {
+      display: block;
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(2rem, 1.2rem + 3vw, 3.15rem);
+      font-weight: 900;
+      color: var(--burgundy-deep);
+      line-height: 1.15;
+      font-variant-numeric: tabular-nums;
+      margin-block-end: 0.35rem;
+      transition: transform 0.22s var(--ease-out-expo), color 0.22s ease;
+    }
+
+    .timer-value.is-ticking {
+      transform: scale(1.06);
+      color: var(--dusty-rose);
+    }
+
+    .timer-label {
+      display: block;
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.08rem);
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    .timer-note {
+      margin-block-start: 1.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(0.95rem, 0.88rem + 0.4vw, 1.08rem);
+      color: var(--burgundy-soft);
+      font-weight: 700;
+      background: rgba(252, 232, 239, 0.65);
+      border: 1px solid rgba(196, 91, 120, 0.24);
+      padding: 0.55rem 1.4rem;
+      border-radius: var(--radius-pill);
+    }
+
+    /* ==========================================================================
+       10. Section 5: Interactive Romantic Keepsake Surprise
+       ========================================================================== */
+    .surprise-section {
+      padding: clamp(2rem, 5vw, 3.25rem) clamp(1.35rem, 4.5vw, 3rem);
+      text-align: center;
+    }
+
+    .surprise-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      min-height: 52px;
+      padding: 0.85rem 2.1rem;
+      border-radius: var(--radius-pill);
+      border: 1.5px solid var(--champagne-gold);
+      background: linear-gradient(135deg, #fffdf9 0%, #fce8ef 100%);
+      color: var(--burgundy-deep);
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(0.98rem, 0.9rem + 0.4vw, 1.1rem);
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 10px 26px -6px rgba(207, 163, 110, 0.35);
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease, background 0.35s ease;
+    }
+
+    .surprise-btn:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(135deg, #fffdf9 0%, #f9d5e2 100%);
+      box-shadow: 0 16px 32px -6px rgba(196, 91, 120, 0.35);
+    }
+
+    .surprise-reveal-box {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transition:
+        grid-template-rows 0.8s var(--ease-out-expo),
+        opacity 0.65s var(--ease-out-expo),
+        margin-block-start 0.5s var(--ease-out-expo);
+    }
+
+    .surprise-reveal-box.is-open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      margin-block-start: 1.85rem;
+    }
+
+    .surprise-reveal-inner {
+      overflow: hidden;
+    }
+
+    .surprise-inner-card {
+      background:
+        radial-gradient(circle at top right, rgba(235, 210, 176, 0.2), transparent 55%),
+        linear-gradient(155deg, #fffdf9 0%, #fdf2f6 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.6rem, 4.5vw, 2.75rem);
+      max-width: 720px;
+      margin-inline: auto;
+      box-shadow:
+        0 18px 40px -12px rgba(89, 28, 47, 0.12),
+        inset 0 0 28px rgba(207, 163, 110, 0.12);
+      text-align: right;
+    }
+
+    .surprise-vow-title {
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.3rem, 1.05rem + 1.1vw, 1.65rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      margin-block-end: 1.15rem;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .surprise-vow-text {
+      font-size: clamp(1.06rem, 0.96rem + 0.5vw, 1.24rem);
+      color: var(--text-primary);
+      line-height: 2.05;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      gap: 1.05rem;
+      text-wrap: pretty;
+    }
+
+    .surprise-vow-highlight {
+      font-weight: 700;
+      color: var(--burgundy-deep);
+      background: rgba(252, 232, 239, 0.6);
+      border-inline-start: 3px solid var(--champagne-gold);
+      padding: 0.85rem 1.15rem;
+      border-radius: 12px;
+      margin-block-start: 0.35rem;
+    }
+
+    .surprise-vow-signature {
+      margin-block-start: 1.35rem;
+      padding-block-start: 1rem;
+      border-block-start: 1px dashed rgba(207, 163, 110, 0.45);
+      text-align: center;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--burgundy-soft);
+    }
+
+    .footer-dev-credit {
+      margin-block-start: 0.35rem;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       10b. New Luxury Sections: Timeline, Reasons I Love You, Code of Love & Wishes
+       ========================================================================== */
+    .timeline-section,
+    .reasons-section,
+    .code-love-section,
+    .wishes-section {
+      padding: clamp(2.25rem, 5vw, 3.75rem) clamp(1.25rem, 4.5vw, 3rem);
+    }
+
+    /* Love Story Timeline */
+    .timeline-track {
+      position: relative;
+      max-width: 780px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-inline-start: 2.25rem;
+    }
+
+    .timeline-track::before {
+      content: "";
+      position: absolute;
+      inset-block: 12px;
+      inset-inline-start: 11px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--champagne-gold), var(--dusty-rose), var(--champagne-gold));
+      opacity: 0.55;
+    }
+
+    .timeline-item {
+      position: relative;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.92) 0%, rgba(253, 245, 238, 0.82) 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.5rem;
+      box-shadow: 0 12px 28px -8px rgba(89, 28, 47, 0.1);
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease;
+    }
+
+    .timeline-item:hover {
+      transform: translateX(-6px);
+      box-shadow: 0 18px 36px -8px rgba(207, 163, 110, 0.26);
+    }
+
+    .timeline-dot {
+      position: absolute;
+      top: 1.5rem;
+      inset-inline-start: -2.25rem;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--burgundy-deep), var(--dusty-rose));
+      border: 3px solid #fffdf9;
+      box-shadow: 0 0 0 3px rgba(207, 163, 110, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #ffffff;
+    }
+
+    .timeline-date {
+      display: inline-block;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--dusty-rose);
+      background: rgba(252, 232, 239, 0.75);
+      border: 1px solid rgba(196, 91, 120, 0.22);
+      padding: 0.18rem 0.8rem;
+      border-radius: var(--radius-pill);
+      margin-block-end: 0.45rem;
+    }
+
+    .timeline-title {
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.1rem, 0.95rem + 0.6vw, 1.3rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      margin-block-end: 0.35rem;
+    }
+
+    .timeline-desc {
+      font-size: clamp(0.98rem, 0.9rem + 0.35vw, 1.08rem);
+      color: var(--text-secondary);
+      line-height: 1.85;
+      text-wrap: pretty;
+    }
+
+    /* Reasons I Love You Grid */
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 265px), 1fr));
+      gap: clamp(1.1rem, 2.5vw, 1.6rem);
+    }
+
+    .reason-card {
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.92) 0%, rgba(253, 242, 246, 0.78) 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.35rem;
+      text-align: center;
+      box-shadow: 0 12px 28px -8px rgba(89, 28, 47, 0.1);
+      transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s ease, border-color 0.3s ease;
+    }
+
+    .reason-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--dusty-rose);
+      box-shadow: 0 20px 38px -10px rgba(196, 91, 120, 0.22);
+    }
+
+    .reason-icon {
+      width: 54px;
+      height: 54px;
+      margin-inline: auto;
+      margin-block-end: 0.9rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fffdf9, #fce4ec);
+      border: 1px solid var(--glass-border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.55rem;
+      box-shadow: 0 6px 16px rgba(207, 163, 110, 0.2);
+    }
+
+    .reason-title {
+      font-family: "Cairo", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      margin-block-end: 0.45rem;
+      text-wrap: balance;
+    }
+
+    .reason-text {
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      text-wrap: pretty;
+    }
+
+    /* Web Developer Romantic Code Card */
+    .code-editor-window {
+      max-width: 720px;
+      margin-inline: auto;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: linear-gradient(165deg, #2d101b 0%, #421727 100%);
+      border: 1.5px solid var(--champagne-gold);
+      box-shadow: 0 24px 50px -12px rgba(45, 16, 27, 0.45);
+      color: #fceef3;
+      text-align: left;
+      direction: ltr;
+    }
+
+    .code-editor-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.15rem;
+      background: rgba(255, 255, 255, 0.06);
+      border-block-end: 1px solid rgba(207, 163, 110, 0.28);
+    }
+
+    .code-window-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .code-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+
+    .code-dot-red { background: #ff6b8b; }
+    .code-dot-gold { background: #f3c677; }
+    .code-dot-rose { background: #e38da4; }
+
+    .code-filename {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.84rem;
+      color: var(--champagne-light);
+      font-weight: 600;
+    }
+
+    .code-editor-body {
+      padding: clamp(1.15rem, 3vw, 1.75rem);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(0.84rem, 0.78rem + 0.35vw, 0.98rem);
+      line-height: 1.85;
+      overflow-x: auto;
+    }
+
+    .tok-kw { color: #ff8da8; font-weight: 700; }
+    .tok-fn { color: #f7d49e; }
+    .tok-str { color: #b9f3d0; }
+    .tok-cm { color: #b58d9b; font-style: italic; }
+
+    .code-editor-actions {
+      padding: 1rem 1.25rem;
+      background: rgba(0, 0, 0, 0.22);
+      border-block-start: 1px solid rgba(207, 163, 110, 0.22);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.85rem;
+      direction: rtl;
+      text-align: right;
+    }
+
+    .run-code-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.35rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--champagne-light);
+      background: linear-gradient(135deg, var(--dusty-rose), var(--champagne-gold));
+      color: #ffffff;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .run-code-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(227, 141, 164, 0.4);
+    }
+
+    .code-output-msg {
+      font-family: "Cairo", sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--champagne-light);
+    }
+
+    /* Interactive Wishes & Prayers Grid */
+    .wishes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+      gap: clamp(1.1rem, 2.5vw, 1.5rem);
+    }
+
+    .wish-card {
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.92) 0%, rgba(253, 245, 236, 0.82) 100%);
+      border: 1.5px solid var(--glass-border-gold);
+      border-radius: var(--radius-md);
+      padding: 1.45rem 1.35rem;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      cursor: pointer;
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease, border-color 0.3s ease;
+    }
+
+    .wish-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 36px -8px rgba(207, 163, 110, 0.26);
+    }
+
+    .wish-card.is-blessed {
+      border-color: var(--dusty-rose);
+      background: linear-gradient(160deg, #fffdf9 0%, #fce6ee 100%);
+    }
+
+    .wish-header {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .wish-emoji {
+      font-size: 1.55rem;
+    }
+
+    .wish-title {
+      font-family: "Cairo", sans-serif;
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--burgundy-deep);
+    }
+
+    .wish-desc {
+      font-size: 0.97rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      text-wrap: pretty;
+    }
+
+    .wish-amen-badge {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: "Cairo", sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.3rem 0.95rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(207, 163, 110, 0.45);
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--burgundy-soft);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .wish-card.is-blessed .wish-amen-badge {
+      background: var(--dusty-rose);
+      color: #ffffff;
+      border-color: var(--dusty-rose);
+    }
+
+    /* ==========================================================================
+       11. Section 6: Footer
+       ========================================================================== */
+    .footer {
+      text-align: center;
+      padding: 1.65rem 1.75rem;
+      border-radius: var(--radius-pill);
+      max-width: 600px;
+      margin-inline: auto;
+      width: 100%;
+      border: 1.5px solid var(--glass-border-gold);
+    }
+
+    .footer-text {
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1rem, 0.9rem + 0.6vw, 1.18rem);
+      font-weight: 800;
+      color: var(--burgundy-deep);
+      letter-spacing: 0.01em;
+    }
+
+    /* ==========================================================================
+       12. Floating Controls (Music Toggle & Back-to-Top Heart Button)
+       ========================================================================== */
+    .floating-controls {
+      position: fixed;
+      bottom: clamp(1rem, 3vw, 1.75rem);
+      inset-inline-start: clamp(1rem, 3vw, 1.75rem);
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .floating-pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      min-height: 46px;
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-pill);
+      border: 1.5px solid var(--glass-border-gold);
+      background: rgba(255, 252, 249, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      color: var(--burgundy-deep);
+      font-family: "Cairo", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(89, 28, 47, 0.16);
+      transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .floating-pill-btn:hover {
+      transform: translateY(-3px);
+      background: #ffffff;
+    }
+
+    .floating-pill-btn.is-playing {
+      border-color: var(--dusty-rose);
+      background: linear-gradient(135deg, #fffdf9, #fce4ec);
+    }
+
+    .music-bars {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 13px;
+    }
+
+    .music-bar {
+      width: 2.5px;
+      height: 4px;
+      background: var(--dusty-rose);
+      border-radius: 2px;
+      transition: height 0.2s ease;
+    }
+
+    .floating-pill-btn.is-playing .music-bar {
+      animation: eqBounce 0.9s ease-in-out infinite alternate;
+    }
+
+    .floating-pill-btn.is-playing .music-bar:nth-child(2) { animation-delay: 0.25s; }
+    .floating-pill-btn.is-playing .music-bar:nth-child(3) { animation-delay: 0.5s; }
+
+    @keyframes eqBounce {
+      0% { height: 4px; }
+      100% { height: 13px; }
+    }
+
+    .back-to-top-btn {
+      position: fixed;
+      bottom: clamp(1rem, 3vw, 1.75rem);
+      inset-inline-end: clamp(1rem, 3vw, 1.75rem);
+      z-index: 90;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1.5px solid var(--glass-border-gold);
+      background: rgba(255, 252, 249, 0.9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      color: var(--dusty-rose);
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(89, 28, 47, 0.16);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(16px);
+      transition:
+        opacity 0.35s var(--ease-out-expo),
+        visibility 0.35s var(--ease-out-expo),
+        transform 0.35s var(--ease-out-expo);
+    }
+
+    .back-to-top-btn.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top-btn:hover {
+      transform: translateY(-4px) scale(1.05);
+      background: #ffffff;
+    }
+
+    /* ==========================================================================
+       13. Dedicated Mobile Responsiveness & Accessibility
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .timer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .letter-corner {
+        width: 20px;
+        height: 20px;
+      }
+
+      .corner-tr { top: 16px; right: 16px; }
+      .corner-tl { top: 16px; left: 16px; }
+      .corner-br { bottom: 16px; right: 16px; }
+      .corner-bl { bottom: 16px; left: 16px; }
+
+      .lightbox-footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-wrapper {
+        padding-inline: 1rem;
+        padding-block: 1.25rem 5rem;
+        gap: 1.85rem;
+      }
+
+      .hero {
+        padding: 2.35rem 1.15rem;
+      }
+
+      .date-badge {
+        padding: 0.65rem 1.15rem;
+        font-size: 0.92rem;
+      }
+
+      .quote-section {
+        padding: 2.15rem 1.2rem;
+      }
+
+      .quote-text {
+        line-height: 2;
+      }
+
+      .gallery-section,
+      .timer-section,
+      .timeline-section,
+      .reasons-section,
+      .code-love-section,
+      .wishes-section,
+      .surprise-section {
+        padding: 1.85rem 1.1rem;
+      }
+
+      .timeline-track {
+        padding-inline-start: 1.85rem;
+      }
+
+      .timeline-dot {
+        inset-inline-start: -1.85rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="envelope-locked">
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="ambient-lights" aria-hidden="true">
+    <div class="light-orb light-orb-1"></div>
+    <div class="light-orb light-orb-2"></div>
+    <div class="light-orb light-orb-3"></div>
+  </div>
+
+  <!-- Cinematic Rose Petals & Tiny Hearts Canvas -->
+  <canvas id="petalsCanvas" aria-hidden="true"></canvas>
+
+  <!-- Romantic Interactive Welcome Envelope Overlay -->
+  <div class="welcome-overlay" id="welcomeOverlay" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="envelope-stage">
+      <div class="envelope-card">
+        <span class="envelope-subtitle">إهداء خاص من محمود إلى شروق ✨</span>
+        <button type="button" class="wax-seal-btn" id="waxSealBtn" aria-label="افتحي الرسالة">
+          ❤️
+        </button>
+        <h2 id="welcomeTitle" class="envelope-title">إلى حبيبتي شروق.. أجمل أقداري</h2>
+        <p class="envelope-desc">
+          مضى شهرٌ كامل منذ أن أصبحتِ خطيبتي وشريكة روحي.. صمّمتُ وبرمجتُ لكِ هذه الصفحة بيدي وبكل حب لتكون ذكرى خالدة لبدايتنا الجميلة.
+        </p>
+        <button type="button" class="open-gift-btn" id="openGiftBtn">
+          <span>افتحي الرسالة يا شروق</span>
+          <span aria-hidden="true">💌</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-wrapper" id="top">
+    <!-- 1. Hero Section -->
+    <header class="hero glass-card luxury-border" aria-labelledby="hero-heading" data-reveal>
+      <div class="hero-emblem-wrapper" aria-hidden="true">
+        <span class="hero-pulse-ring"></span>
+        <span class="hero-pulse-ring"></span>
+        <div class="hero-icon">💍</div>
+      </div>
+
+      <div>
+        <div class="hero-couple-names" aria-label="محمود و شروق">
+          <span>محمود</span>
+          <span class="hero-couple-heart" aria-hidden="true">♥</span>
+          <span>شروق</span>
+        </div>
+      </div>
+
+      <div class="hero-title-container">
+        <!-- Subtle decorative heart behind the main title -->
+        <svg class="hero-bg-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <h1 id="hero-heading" class="hero-title">شهر على أجمل بداية ❤️</h1>
+      </div>
+
+      <p class="hero-subtitle-poem">حكاية حب بدأت بنظرة، وأزهرت بعهدٍ أبدي</p>
+
+      <div class="date-badge-wrapper">
+        <div class="date-badge" role="note" aria-label="تاريخ الخطوبة">
+          <span class="date-badge-dot" aria-hidden="true"></span>
+          <span>خطوبتنا: 8 / 10 / 2026 - 9:30 صباحاً</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="#story-section" class="scroll-cue" aria-label="انتقلي إلى رسالتي لكِ">
+          <span>اقرئي رسالتي لكِ</span>
+          <span class="scroll-cue-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ ♥ ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 2. Quote / Story Section (Romantic Letter Design) -->
+    <section id="story-section" class="quote-section glass-card" aria-label="كلماتي لكِ" data-reveal>
+      <span class="letter-corner corner-tr" aria-hidden="true"></span>
+      <span class="letter-corner corner-tl" aria-hidden="true"></span>
+      <span class="letter-corner corner-br" aria-hidden="true"></span>
+      <span class="letter-corner corner-bl" aria-hidden="true"></span>
+
+      <div class="letter-seal" aria-hidden="true">💌</div>
+      <span class="letter-header-label">رسالة من قلب محمود إلى شروق</span>
+      <span class="quote-mark" aria-hidden="true">❝</span>
+
+      <blockquote class="quote-text">
+        "منذ ذلك الأحد، في الرابع من أكتوبر لعام 2026 (4/10/2026)، يوم التقينا للمرة الأولى.. لم يغب ذلك النور الذي أشرق من محياكِ عن روحي قط. لقد كنتِ أعذب وجهٍ رأتْه عيناي في حياتي كلها، وما زال طيفكِ يسكنني كأجمل ما عرف القلب."
+      </blockquote>
+
+      <div class="quote-signature">
+        <div class="quote-divider" aria-hidden="true">♥</div>
+        <span class="signature-caption">محمود ♥ شروق — منذ 4 أكتوبر 2026 وإلى الأبد</span>
+      </div>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ 💍 ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 3. Photo Gallery Section (Heirloom Printed Photographs) -->
+    <section class="gallery-section glass-card luxury-border" aria-labelledby="gallery-heading" data-reveal>
+      <div class="section-header">
+        <span class="section-eyebrow">✨ ألبوم ذكرياتنا ✨</span>
+        <h2 id="gallery-heading" class="section-title">ذكرياتنا الغالية 📸</h2>
+        <p class="section-subtitle">لحظات محفورة في القلب إلى الأبد — اضغطي على أي صورة لتكبيرها</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1: Couple Photo Together (Main Romantic Memory) -->
+        <figure
+          class="photo-frame"
+          tabindex="0"
+          role="button"
+          aria-label="عرض الصورة الأولى بحجم كامل: أجمل اللحظات معاً"
+          data-photo-index="0"
+        >
+          <div class="photo-badge-top">
+            <span>الذكرى الأولى ♥</span>
+            <span>8 / 10 / 2026</span>
+          </div>
+          <div class="photo-img-container">
+            <img
+              src="photo1.jpg"
+              alt="صورتنا معاً - أجمل اللحظات معاً"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('is-fallback'); this.style.display='none';"
+            />
+            <span class="photo-zoom-hint" aria-hidden="true">🔍 تكبير الصورة</span>
+            <div class="photo-fallback" aria-hidden="true">
+              <span class="photo-fallback-icon">💑</span>
+              <span>photo1.jpg</span>
+            </div>
+          </div>
+          <figcaption class="photo-caption-box">
+            <div class="photo-caption">أجمل اللحظات معاً</div>
+            <div class="photo-subcaption">ابتسامتكِ التي أضاءت عالمي</div>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 2: Holding Hands Showing Engagement Ring (Engagement Centerpiece) -->
+        <figure
+          class="photo-frame is-centerpiece"
+          tabindex="0"
+          role="button"
+          aria-label="عرض الصورة الثانية بحجم كامل: البداية الأبدية"
+          data-photo-index="1"
+        >
+          <div class="photo-badge-top">
+            <span>عهدنا الأبدي 💍</span>
+            <span>خاتم الخطوبة</span>
+          </div>
+          <div class="photo-img-container">
+            <img
+              src="photo2.jpg"
+              alt="تشابك الأيدي وخاتم الخطوبة - البداية الأبدية"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('is-fallback'); this.style.display='none';"
+            />
+            <span class="photo-zoom-hint" aria-hidden="true">🔍 تكبير الصورة</span>
+            <div class="photo-fallback" aria-hidden="true">
+              <span class="photo-fallback-icon">💍</span>
+              <span>photo2.jpg</span>
+            </div>
+          </div>
+          <figcaption class="photo-caption-box">
+            <div class="photo-caption">البداية الأبدية 💍</div>
+            <div class="photo-subcaption">يدُكِ في يدي.. وعدٌ لا ينتهي</div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ ⏳ ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 4. Live Elapsed Time Counter -->
+    <section class="timer-section glass-card luxury-border" aria-labelledby="timer-heading" data-reveal>
+      <div class="section-header">
+        <span class="section-eyebrow">⏱️ عدّاد الحب</span>
+        <h2 id="timer-heading" class="section-title">كل لحظة معكِ هي عمر جديد ⏳</h2>
+        <p class="section-subtitle">الوقت الذي مضى منذ لحظة خطوبتنا (8 أكتوبر 2026 - 9:30 صباحاً)</p>
+      </div>
+
+      <div class="timer-grid" role="timer" aria-live="polite" aria-atomic="true">
+        <div class="timer-card">
+          <span class="timer-value" id="days">0</span>
+          <span class="timer-label">يوم</span>
+        </div>
+        <div class="timer-card">
+          <span class="timer-value" id="hours">00</span>
+          <span class="timer-label">ساعة</span>
+        </div>
+        <div class="timer-card">
+          <span class="timer-value" id="minutes">00</span>
+          <span class="timer-label">دقيقة</span>
+        </div>
+        <div class="timer-card">
+          <span class="timer-value" id="seconds">00</span>
+          <span class="timer-label">ثانية</span>
+        </div>
+      </div>
+
+      <p class="timer-note" id="timerStatusNote">ويزداد حبنا في كل ثانية تمر ❤️</p>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ ✨ ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 4b. Our Love Story Timeline Section -->
+    <section class="timeline-section glass-card luxury-border" aria-labelledby="timeline-heading" data-reveal>
+      <div class="section-header">
+        <span class="section-eyebrow">📖 فصول حكايتنا</span>
+        <h2 id="timeline-heading" class="section-title">محطات لا تُنسى في قصة حبنا ✨</h2>
+        <p class="section-subtitle">منذ أول نظرة خطفت قلبي وحتى آخر العمر معكِ يا شروق</p>
+      </div>
+
+      <div class="timeline-track">
+        <article class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true">♥</span>
+          <span class="timeline-date">الأحد 4 / 10 / 2026</span>
+          <h3 class="timeline-title">أول لقاء وأجمل نظرة في حياتي ✨</h3>
+          <p class="timeline-desc">
+            اليوم الذي التقينا فيه لأول مرة، ورأيتُ في وجهكِ ذلك النور الصافي وتلك الخجلة الجميلة التي سكنت قلبي ولم تغب عن عيني لحظة واحدة.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true">💍</span>
+          <span class="timeline-date">الخميس 8 / 10 / 2026 — 9:30 صباحاً</span>
+          <h3 class="timeline-title">فرحة خطوبتنا وعهدنا الأبدي 💍</h3>
+          <p class="timeline-desc">
+            اللحظة التي أصبحتِ فيها خطيبتي رسمياً، وتشابكت أيدينا بخاتم الخطوبة لنبدأ معاً أجمل وأغلى رحلة في عمري.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true">🎉</span>
+          <span class="timeline-date">8 / 11 / 2026</span>
+          <h3 class="timeline-title">إتمام شهرنا الأول معاً ❤️</h3>
+          <p class="timeline-desc">
+            ثلاثون يوماً مرّت كأنها حلم جميل، عرفتُ فيها معنى السكينة والحنان، وتأكدتُ في كل يومٍ منها أنني أسعد إنسان لأنكِ نصيبي.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true">🏡</span>
+          <span class="timeline-date">المستقبل والعمر كله بإذن الله</span>
+          <h3 class="timeline-title">بيتنا الدافئ وعمرٌ كامل تحت سقف واحد 🤍</h3>
+          <p class="timeline-desc">
+            أيامٌ قادمة نصنعها معاً بالحب والمودة والرحمة، لنحتفل بكل شهر وبكل سنة ونحن معاً إلى الأبد.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ 🌸 ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 4c. Why I Love You Shorouk Section -->
+    <section class="reasons-section glass-card luxury-border" aria-labelledby="reasons-heading" data-reveal>
+      <div class="section-header">
+        <span class="section-eyebrow">🌸 إلى شروق قلبي</span>
+        <h2 id="reasons-heading" class="section-title">أشياء تعشقها روحي فيكِ يا شروق ❤️</h2>
+        <p class="section-subtitle">تفاصيلكِ التي تجعلني أختاركِ وأحبكِ كل يوم من جديد</p>
+      </div>
+
+      <div class="reasons-grid">
+        <article class="reason-card">
+          <div class="reason-icon" aria-hidden="true">🌷</div>
+          <h3 class="reason-title">نور وجهكِ وخجلكِ الفريد</h3>
+          <p class="reason-text">
+            ذلك النور الربّاني والخجل الجميل الذي خطف قلبي منذ أول يوم التقينا فيه يوم 4/10/2026.
+          </p>
+        </article>
+
+        <article class="reason-card">
+          <div class="reason-icon" aria-hidden="true">🤍</div>
+          <h3 class="reason-title">طِيبة قلبكِ وحنانكِ</h3>
+          <p class="reason-text">
+            قلبكِ الأبيض الصافي الذي يمنحني الطمأنينة ويجعل الدنيا كلها أدفأ وأحنّ بوجودكِ.
+          </p>
+        </article>
+
+        <article class="reason-card">
+          <div class="reason-icon" aria-hidden="true">😊</div>
+          <h3 class="reason-title">ابتسامتكِ التي تُحيي روحي</h3>
+          <p class="reason-text">
+            حين تبتسمين يا شروق، أشعر أن كل تعب الدنيا يزول وأن الفرح يملأ قلبي وأيامي.
+          </p>
+        </article>
+
+        <article class="reason-card">
+          <div class="reason-icon" aria-hidden="true">🤝</div>
+          <h3 class="reason-title">الرفيقة والصاحبة والسند</h3>
+          <p class="reason-text">
+            لأنكِ لستِ فقط حبيبتي، بل صديقتي الأقرب، وراحتي، وشريكة عمري في الحلوة والمرة.
+          </p>
+        </article>
+
+        <article class="reason-card">
+          <div class="reason-icon" aria-hidden="true">✨</div>
+          <h3 class="reason-title">تفاصيلكِ الصغيرة الغالية</h3>
+          <p class="reason-text">
+            صوتكِ، ضحكتكِ، واهتمامكِ الذي يحوّل كل لحظة عادية إلى ذكرى جميلة محفورة في البال.
+          </p>
+        </article>
+
+        <article class="reason-card">
+          <div class="reason-icon" aria-hidden="true">☀️</div>
+          <h3 class="reason-title">لأنكِ "شروق" عمري</h3>
+          <p class="reason-text">
+            اسمٌ على مسمّى؛ أشرقتِ في حياتي فملأتِها نوراً وبهجةً وعوضاً جميلاً من ربّ العالمين.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ 💻❤️ ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 4d. Web Developer Special Section: Code of Our Eternal Love -->
+    <section class="code-love-section glass-card luxury-border" aria-labelledby="code-heading" data-reveal>
+      <div class="section-header">
+        <span class="section-eyebrow">💻 لمسة من مطوّر ويب عاشق</span>
+        <h2 id="code-heading" class="section-title">شيفرة حبنا الأبدية (Code of Love) ❤️</h2>
+        <p class="section-subtitle">لأنني مطوّر ويب، كتبتُ حبّكِ يا شروق في دالّة لا تتوقف مدى الحياة</p>
+      </div>
+
+      <div class="code-editor-window">
+        <div class="code-editor-header">
+          <div class="code-window-dots" aria-hidden="true">
+            <span class="code-dot code-dot-red"></span>
+            <span class="code-dot code-dot-gold"></span>
+            <span class="code-dot code-dot-rose"></span>
+          </div>
+          <span class="code-filename">mahmoud-and-shorouk.js</span>
+        </div>
+        <pre class="code-editor-body"><code><span class="tok-cm">// Eternal Engagement &amp; Love Algorithm ❤️</span>
+<span class="tok-kw">const</span> groom = <span class="tok-str">"Mahmoud"</span>;
+<span class="tok-kw">const</span> bride = <span class="tok-str">"Shorouk"</span>;
+<span class="tok-kw">const</span> engagementDate = <span class="tok-str">"2026-10-08T09:30:00"</span>;
+
+<span class="tok-kw">function</span> <span class="tok-fn">eternalLove</span>(myHeart, shorouk) {
+  <span class="tok-kw">while</span> (<span class="tok-kw">true</span>) {
+    myHeart.<span class="tok-fn">chooseEveryDay</span>(shorouk);
+    myHeart.<span class="tok-fn">supportAndProtect</span>(shorouk, <span class="tok-str">"بالحلوة والمرة"</span>);
+    myHeart.<span class="tok-fn">loveMoreThanYesterday</span>();
+  }
+}</code></pre>
+        <div class="code-editor-actions">
+          <button type="button" class="run-code-btn" id="runLoveCodeBtn">
+            <span>تشغيل كود الحب ▶</span>
+          </button>
+          <span class="code-output-msg" id="codeOutputMsg">النتيجة: حبّنا يعمل إلى ما لا نهاية ∞ ❤️</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ 🤲 ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 4e. Interactive Future Wishes & Prayers Section -->
+    <section class="wishes-section glass-card luxury-border" aria-labelledby="wishes-heading" data-reveal>
+      <div class="section-header">
+        <span class="section-eyebrow">🕊️ دعواتنا للمستقبل</span>
+        <h2 id="wishes-heading" class="section-title">أمنياتي لنا في السنين القادمة ✨</h2>
+        <p class="section-subtitle">اضغطي على كل أمنية يا شروق لتضيئيها بدعوةٍ من القلب</p>
+      </div>
+
+      <div class="wishes-grid">
+        <article class="wish-card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <div class="wish-header">
+              <span class="wish-emoji" aria-hidden="true">🏡</span>
+              <h3 class="wish-title">بيتٌ دافئ يجمعنا على خير</h3>
+            </div>
+            <p class="wish-desc">
+              أن يجمعنا الله تحت سقفٍ واحد في بيتٍ يملؤه الأمان، وتزهر فيه ضحكاتنا في كل صباح ومساء.
+            </p>
+          </div>
+          <span class="wish-amen-badge">اضغطي للتأمين: آمين يا رب 🤍</span>
+        </article>
+
+        <article class="wish-card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <div class="wish-header">
+              <span class="wish-emoji" aria-hidden="true">💍</span>
+              <h3 class="wish-title">تمام الفرحة الكبرى</h3>
+            </div>
+            <p class="wish-desc">
+              أن ييسّر الله أمورنا، ويتمم فرحتنا على خير، ويبارك لنا في كل خطوة نخطوها معاً.
+            </p>
+          </div>
+          <span class="wish-amen-badge">اضغطي للتأمين: آمين يا رب 🤍</span>
+        </article>
+
+        <article class="wish-card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <div class="wish-header">
+              <span class="wish-emoji" aria-hidden="true">✈️</span>
+              <h3 class="wish-title">ذكرياتٌ لا تنتهي معاً</h3>
+            </div>
+            <p class="wish-desc">
+              أن نسافر ونفرح ونصنع آلاف الذكريات الجميلة، ويبقى ألبوم حياتنا مليئاً بلحظات السعادة.
+            </p>
+          </div>
+          <span class="wish-amen-badge">اضغطي للتأمين: آمين يا رب 🤍</span>
+        </article>
+
+        <article class="wish-card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <div class="wish-header">
+              <span class="wish-emoji" aria-hidden="true">🤲</span>
+              <h3 class="wish-title">مودة ورحمة وسعادة دائمة</h3>
+            </div>
+            <p class="wish-desc">
+              أن يحفظكِ الله لي من كل شر، ويفتح لكِ أبواب الرزق والخير، ويديم بيننا المودة والرحمة طول العمر.
+            </p>
+          </div>
+          <span class="wish-amen-badge">اضغطي للتأمين: آمين يا رب 🤍</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Ornamental Transition -->
+    <div class="ornamental-divider" aria-hidden="true">
+      <span class="ornamental-line"></span>
+      <span class="ornamental-gem">✦ 💝 ✦</span>
+      <span class="ornamental-line"></span>
+    </div>
+
+    <!-- 5. Romantic Interactive Keepsake Surprise (Mahmoud's Vow to Shorouk) -->
+    <section class="surprise-section glass-card luxury-border" aria-labelledby="surprise-heading" data-reveal>
+      <div class="section-header" style="margin-block-end: 1.25rem;">
+        <span class="section-eyebrow">💝 وعدي لكِ يا شروق</span>
+        <h2 id="surprise-heading" class="section-title">رسالة وعد من قلبي لقلبكِ ✨</h2>
+        <p class="section-subtitle">اضغطي على الزر بالأسفل لتفتحي رسالة وعدي لكِ في شهرنا الأول</p>
+      </div>
+
+      <button type="button" class="surprise-btn" id="surpriseBtn" aria-expanded="false" aria-controls="surpriseRevealBox">
+        <span>افتحي رسالة الوعد يا شروق</span>
+        <span aria-hidden="true">💝</span>
+      </button>
+
+      <div class="surprise-reveal-box" id="surpriseRevealBox" role="region" aria-live="polite">
+        <div class="surprise-reveal-inner">
+          <div class="surprise-inner-card">
+            <h3 class="surprise-vow-title">حبيبتي وروح قلبي، ❤️</h3>
+            <div class="surprise-vow-text">
+              <p>
+                اليوم كملنا شهر على خطوبتنا، شهر من أجمل أيام عمري، شهر حسّيت فيه قديش أنا محظوظ إنك صرتِ جزء من حياتي. بدي أوعدك وعد من كل قلبي، إني أضل سندك وضهرك وأمانك، وأكون معك بالحلوة والمرة، بالفرح والحزن، بأيام الراحة وأيام التعب. ما أخليك تواجهي الدنيا لحالك، وأضل ماسك إيدك مهما صعبت علينا الظروف.
+              </p>
+              <p>
+                بوعدك أحبك وأختارك كل يوم من جديد، وأحافظ على قلبك وخاطرك، وأكون إلك الحبيب والصاحب والسند وشريك العمر. ما بوعدك إن حياتنا ما يكون فيها صعوبات، لكن بوعدك إننا نواجهها سوا وما نتخلى عن بعض.
+              </p>
+              <p>
+                وبدعي ربّي من كل قلبي يوفقك ويسعدك، وييسّر أمورك، ويفتحلك أبواب الرزق والخير، ويحققلك كل اللي بتتمنيه، ويحفظك من كل شر، ويجمعنا على خير ، ويتمم فرحتنا على خير، ويرزقنا حياة مليانة مودة ورحمة وراحة بال.
+              </p>
+              <p>
+                كل شهر وإنتِ حبيبتي وأجمل أقداري، وإن شاء الله ما نحتفل بشهر واحد بس، نحتفل بعمر كامل وإحنا مع بعض، تحت سقف واحد، ونضل لبعض العمر كله.
+              </p>
+              <p class="surprise-vow-highlight">
+                <strong>بحبك كثيير ، وبوعدك أكون إلك بالحلوة والمرة، واليوم وبكرا وكل العمر. الله لا يحرمني منك ويجمعني فيكِ على خير يا أغلى ما عندي. ❤️💍</strong>
+              </p>
+            </div>
+            <div class="surprise-vow-signature">
+              حبيبكِ للأبد: محمود ❤️
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="footer glass-card" data-reveal>
+      <p class="footer-text">صُنع بحب لأجلكِ ليبقى ذكرى أبدية ✨</p>
+      <p class="footer-dev-credit">صُمّم وبُرمج بكل حب بيد حبيبكِ محمود خصيصاً لكِ يا شروق 💻❤️</p>
+    </footer>
+  </main>
+
+  <!-- Full-Screen Photo Lightbox Modal -->
+  <dialog class="lightbox-dialog" id="photoLightbox" closedby="any" aria-labelledby="lightboxCaption">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="إغلاق المعاينة">✕</button>
+      <div class="lightbox-img-wrapper">
+        <img id="lightboxImg" src="photo1.jpg" alt="" />
+      </div>
+      <div class="lightbox-footer">
+        <div class="lightbox-caption" id="lightboxCaption">أجمل اللحظات معاً</div>
+        <div class="lightbox-nav">
+          <button type="button" class="lightbox-nav-btn" id="lightboxPrevBtn" aria-label="الصورة السابقة">السابقة</button>
+          <button type="button" class="lightbox-nav-btn" id="lightboxNextBtn" aria-label="الصورة التالية">التالية</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Floating Music Control & Back-to-Top Heart Button -->
+  <div class="floating-controls">
+    <button type="button" class="floating-pill-btn" id="musicToggleBtn" aria-pressed="false" aria-label="تشغيل أو إيقاف الموسيقى الهادئة">
+      <span class="music-bars" aria-hidden="true">
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+      </span>
+      <span id="musicBtnLabel">موسيقى هادئة 🎵</span>
+    </button>
+  </div>
+
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="العودة إلى أعلى الصفحة" title="العودة إلى الأعلى">
+    ♥
+  </button>
+
+  <script>
+    /**
+     * 1. Live Elapsed Time Counter
+     * Preserves exact starting date: October 8, 2026 at 09:30:00 AM local time.
+     */
+    (function initElapsedTimer() {
+      const engagementDate = new Date(2026, 9, 8, 9, 30, 0).getTime(); // Month 9 = October
+
+      const daysEl = document.getElementById("days");
+      const hoursEl = document.getElementById("hours");
+      const minutesEl = document.getElementById("minutes");
+      const secondsEl = document.getElementById("seconds");
+
+      let lastSeconds = -1;
+
+      function padTwoDigits(num) {
+        return String(num).padStart(2, "0");
+      }
+
+      function pulseElement(el) {
+        if (!el) return;
+        el.classList.add("is-ticking");
+        setTimeout(function () {
+          el.classList.remove("is-ticking");
+        }, 220);
+      }
+
+      function updateCounter() {
+        const now = Date.now();
+        const elapsedMs = Math.max(0, now - engagementDate);
+
+        const totalSeconds = Math.floor(elapsedMs / 1000);
+        const days = Math.floor(totalSeconds / (3600 * 24));
+        const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        daysEl.textContent = days;
+        hoursEl.textContent = padTwoDigits(hours);
+        minutesEl.textContent = padTwoDigits(minutes);
+        secondsEl.textContent = padTwoDigits(seconds);
+
+        if (seconds !== lastSeconds) {
+          pulseElement(secondsEl);
+          lastSeconds = seconds;
+        }
+      }
+
+      updateCounter();
+      setInterval(updateCounter, 1000);
+    })();
+
+    /**
+     * 2. Cinematic Floating Rose Petals & Tiny Hearts Canvas
+     * Lightweight, responsive 60fps canvas animation with burst support.
+     */
+    const petalSystem = (function initPetalsCanvas() {
+      const canvas = document.getElementById("petalsCanvas");
+      if (!canvas) return { triggerBurst: function () {} };
+      const ctx = canvas.getContext("2d");
+
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+
+      window.addEventListener("resize", function () {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      const palette = [
+        "rgba(227, 141, 164, 0.38)",
+        "rgba(247, 191, 210, 0.45)",
+        "rgba(207, 163, 110, 0.34)",
+        "rgba(196, 91, 120, 0.28)"
+      ];
+
+      const particles = [];
+      const baseCount = window.innerWidth < 640 ? 18 : 28;
+
+      function createParticle(isBurst) {
+        return {
+          x: isBurst ? width / 2 + (Math.random() - 0.5) * 180 : Math.random() * width,
+          y: isBurst ? height / 2 + (Math.random() - 0.5) * 120 : Math.random() * height,
+          size: 5 + Math.random() * 7,
+          speedY: isBurst ? -1.5 - Math.random() * 2.5 : 0.35 + Math.random() * 0.65,
+          speedX: (Math.random() - 0.5) * 0.8,
+          angle: Math.random() * Math.PI * 2,
+          spin: (Math.random() - 0.5) * 0.02,
+          color: palette[Math.floor(Math.random() * palette.length)],
+          isHeart: Math.random() > 0.45,
+          burstLife: isBurst ? 110 : null
+        };
+      }
+
+      for (let i = 0; i < baseCount; i++) {
+        particles.push(createParticle(false));
+      }
+
+      function drawHeart(x, y, size) {
+        ctx.beginPath();
+        const topCurveHeight = size * 0.3;
+        ctx.moveTo(x, y + topCurveHeight);
+        ctx.bezierCurveTo(x, y, x - size / 2, y, x - size / 2, y + topCurveHeight);
+        ctx.bezierCurveTo(x - size / 2, y + (size + topCurveHeight) / 2, x, y + (size + topCurveHeight) / 1.4, x, y + size);
+        ctx.bezierCurveTo(x, y + (size + topCurveHeight) / 1.4, x + size / 2, y + (size + topCurveHeight) / 2, x + size / 2, y + topCurveHeight);
+        ctx.bezierCurveTo(x + size / 2, y, x, y, x, y + topCurveHeight);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      function drawPetal(x, y, size) {
+        ctx.beginPath();
+        ctx.ellipse(x, y, size * 0.65, size * 0.38, 0, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      function render() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = particles.length - 1; i >= 0; i--) {
+          const p = particles[i];
+          p.y += p.speedY;
+          p.x += p.speedX + Math.sin(p.angle) * 0.3;
+          p.angle += p.spin;
+
+          if (p.burstLife !== null) {
+            p.speedY += 0.04; // gentle gravity after burst
+            p.burstLife -= 1;
+            if (p.burstLife <= 0) {
+              particles.splice(i, 1);
+              continue;
+            }
+          } else {
+            if (p.y > height + 20) {
+              p.y = -20;
+              p.x = Math.random() * width;
+            }
+          }
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.angle);
+          ctx.fillStyle = p.color;
+          if (p.isHeart) {
+            drawHeart(0, 0, p.size);
+          } else {
+            drawPetal(0, 0, p.size);
+          }
+          ctx.restore();
+        }
+
+        requestAnimationFrame(render);
+      }
+
+      render();
+
+      return {
+        triggerBurst: function () {
+          for (let i = 0; i < 24; i++) {
+            particles.push(createParticle(true));
+          }
+        }
+      };
+    })();
+
+    /**
+     * 3. Gentle Romantic Music Box Synthesizer (Web Audio API)
+     * Plays a warm, dreamy music-box chord melody ONLY after user interaction.
+     */
+    const musicController = (function initRomanticMusic() {
+      let audioCtx = null;
+      let isPlaying = false;
+      let intervalId = null;
+
+      // Warm romantic music-box notes (F major / D minor pentatonic)
+      const melodyNotes = [523.25, 659.25, 783.99, 880.00, 783.99, 659.25, 587.33, 523.25];
+      let noteIdx = 0;
+
+      function playChimeNote(freq) {
+        if (!audioCtx || !isPlaying) return;
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(freq, now);
+
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(0.035, now + 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 2.4);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc.start(now);
+        osc.stop(now + 2.45);
+      }
+
+      function startMusic() {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return;
+
+        if (!audioCtx) {
+          audioCtx = new AudioContextClass();
+        }
+        if (audioCtx.state === "suspended") {
+          audioCtx.resume();
+        }
+
+        isPlaying = true;
+        updateMusicUI();
+
+        playChimeNote(melodyNotes[noteIdx]);
+        intervalId = setInterval(function () {
+          noteIdx = (noteIdx + 1) % melodyNotes.length;
+          playChimeNote(melodyNotes[noteIdx]);
+        }, 1350);
+      }
+
+      function stopMusic() {
+        isPlaying = false;
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+        updateMusicUI();
+      }
+
+      function toggleMusic() {
+        if (isPlaying) {
+          stopMusic();
+        } else {
+          startMusic();
+        }
+      }
+
+      function updateMusicUI() {
+        const btn = document.getElementById("musicToggleBtn");
+        const label = document.getElementById("musicBtnLabel");
+        if (!btn || !label) return;
+        btn.classList.toggle("is-playing", isPlaying);
+        btn.setAttribute("aria-pressed", String(isPlaying));
+        label.textContent = isPlaying ? "إيقاف الموسيقى 🎵" : "موسيقى هادئة 🎵";
+      }
+
+      const btn = document.getElementById("musicToggleBtn");
+      if (btn) {
+        btn.addEventListener("click", toggleMusic);
+      }
+
+      return { startMusic: startMusic };
+    })();
+
+    /**
+     * 4. Welcome Envelope Overlay Interaction
+     */
+    (function initWelcomeEnvelope() {
+      const overlay = document.getElementById("welcomeOverlay");
+      const openBtn = document.getElementById("openGiftBtn");
+      const sealBtn = document.getElementById("waxSealBtn");
+
+      function unlockExperience() {
+        if (!overlay || overlay.classList.contains("is-hidden")) return;
+        overlay.classList.add("is-hidden");
+        document.body.classList.remove("envelope-locked");
+        petalSystem.triggerBurst();
+      }
+
+      if (openBtn) openBtn.addEventListener("click", unlockExperience);
+      if (sealBtn) sealBtn.addEventListener("click", unlockExperience);
+    })();
+
+    /**
+     * 5. Scroll Reveal Animations & Floating Back-to-Top Button
+     */
+    (function initScrollAndReveal() {
+      const revealItems = document.querySelectorAll("[data-reveal]");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.14 }
+        );
+
+        revealItems.forEach(function (el) {
+          observer.observe(el);
+        });
+      } else {
+        revealItems.forEach(function (el) {
+          el.classList.add("is-visible");
+        });
+      }
+
+      const backToTopBtn = document.getElementById("backToTopBtn");
+      if (backToTopBtn) {
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (window.scrollY > 360) {
+              backToTopBtn.classList.add("is-visible");
+            } else {
+              backToTopBtn.classList.remove("is-visible");
+            }
+          },
+          { passive: true }
+        );
+
+        backToTopBtn.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    })();
+
+    /**
+     * 6. Fullscreen Photo Gallery Lightbox (<dialog>)
+     * Preserves photo1.jpg and photo2.jpg and supports click, keyboard, and light-dismiss.
+     */
+    (function initPhotoLightbox() {
+      const photos = [
+        {
+          src: "photo1.jpg",
+          alt: "صورتنا معاً - أجمل اللحظات معاً",
+          caption: "أجمل اللحظات معاً ❤️"
+        },
+        {
+          src: "photo2.jpg",
+          alt: "تشابك الأيدي وخاتم الخطوبة - البداية الأبدية",
+          caption: "البداية الأبدية 💍"
+        }
+      ];
+
+      const dialog = document.getElementById("photoLightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxCaption = document.getElementById("lightboxCaption");
+      const closeBtn = document.getElementById("lightboxCloseBtn");
+      const prevBtn = document.getElementById("lightboxPrevBtn");
+      const nextBtn = document.getElementById("lightboxNextBtn");
+      const frames = document.querySelectorAll(".photo-frame[data-photo-index]");
+
+      if (!dialog || !lightboxImg) return;
+
+      let currentIndex = 0;
+
+      function showPhoto(index) {
+        currentIndex = (index + photos.length) % photos.length;
+        const item = photos[currentIndex];
+        lightboxImg.src = item.src;
+        lightboxImg.alt = item.alt;
+        lightboxCaption.textContent = item.caption;
+      }
+
+      function openLightbox(index) {
+        showPhoto(index);
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute("open", "open");
+        }
+      }
+
+      function closeLightbox() {
+        if (typeof dialog.close === "function") {
+          dialog.close();
+        } else {
+          dialog.removeAttribute("open");
+        }
+      }
+
+      frames.forEach(function (frame) {
+        frame.addEventListener("click", function () {
+          const idx = Number(frame.getAttribute("data-photo-index")) || 0;
+          openLightbox(idx);
+        });
+
+        frame.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            const idx = Number(frame.getAttribute("data-photo-index")) || 0;
+            openLightbox(idx);
+          }
+        });
+      });
+
+      if (closeBtn) closeBtn.addEventListener("click", closeLightbox);
+      if (prevBtn) prevBtn.addEventListener("click", function () { showPhoto(currentIndex - 1); });
+      if (nextBtn) nextBtn.addEventListener("click", function () { showPhoto(currentIndex + 1); });
+
+      // Mandatory fallback for browsers without declarative <dialog closedby="any"> support
+      if (typeof HTMLDialogElement !== "undefined" && !("closedBy" in HTMLDialogElement.prototype)) {
+        dialog.addEventListener("click", function (event) {
+          if (event.target !== dialog) return;
+          const rect = dialog.getBoundingClientRect();
+          const isDialogContent =
+            rect.top <= event.clientY &&
+            event.clientY <= rect.top + rect.height &&
+            rect.left <= event.clientX &&
+            event.clientX <= rect.left + rect.width;
+          if (isDialogContent) return;
+          dialog.close();
+        });
+      }
+
+      window.addEventListener("keydown", function (e) {
+        if (!dialog.hasAttribute("open")) return;
+        if (e.key === "ArrowRight") showPhoto(currentIndex - 1);
+        if (e.key === "ArrowLeft") showPhoto(currentIndex + 1);
+      });
+    })();
+
+    /**
+     * 7. Final Surprise Message Toggle
+     */
+    (function initSurpriseMessage() {
+      const btn = document.getElementById("surpriseBtn");
+      const box = document.getElementById("surpriseRevealBox");
+      if (!btn || !box) return;
+
+      btn.addEventListener("click", function () {
+        const isOpen = box.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", String(isOpen));
+        btn.querySelector("span").textContent = isOpen
+          ? "إخفاء رسالة الوعد"
+          : "افتحي رسالة الوعد يا شروق";
+
+        if (isOpen) {
+          petalSystem.triggerBurst();
+        }
+      });
+    })();
+
+    /**
+     * 8. Interactive Code of Love Runner & Wishes Cards Blessing
+     */
+    (function initExtraRomanticInteractions() {
+      const runCodeBtn = document.getElementById("runLoveCodeBtn");
+      const codeOutputMsg = document.getElementById("codeOutputMsg");
+      const codeMessages = [
+        "تم التشغيل بنجاح: حبّ محمود لشروق = ∞ (لا نهائي) ❤️💍",
+        "Output: شروق هي أجمل قدر وأحلى نعمة في حياة محمود ✨",
+        "Status 200 OK: وعدٌ أبدي بالحلوة والمرة مدى الحياة 🤍"
+      ];
+      let msgIndex = 0;
+
+      if (runCodeBtn && codeOutputMsg) {
+        runCodeBtn.addEventListener("click", function () {
+          codeOutputMsg.textContent = codeMessages[msgIndex % codeMessages.length];
+          msgIndex += 1;
+          petalSystem.triggerBurst();
+        });
+      }
+
+      const wishCards = document.querySelectorAll(".wish-card");
+      wishCards.forEach(function (card) {
+        function toggleWish() {
+          const blessed = card.classList.toggle("is-blessed");
+          card.setAttribute("aria-pressed", String(blessed));
+          const badge = card.querySelector(".wish-amen-badge");
+          if (badge) {
+            badge.textContent = blessed ? "آمين يا رب العالمين ❤️✨" : "اضغطي للتأمين: آمين يا رب 🤍";
+          }
+          if (blessed) {
+            petalSystem.triggerBurst();
+          }
+        }
+
+        card.addEventListener("click", toggleWish);
+        card.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggleWish();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
